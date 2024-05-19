@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201009/pngtree-science-or-technology-background-with-dynamic-particles-trendy-colorful-design-template-image_406781.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: transparent;
+    color: rgb(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    -webkit-text-stroke: 2px #5D186D;
+    font-size: 70px;
+    margin: 20px 20px;
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #001528;
+    animation: slideInUp 1s ease-in-out; /* Slide in animation */
+}
+
+.expense-form {
+    display: flexbox;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+.expense-form label {
+    display: block;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+.expense-form input[type="text"],
+.expense-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    animation: slideInRight 1s ease-in-out; /* Slide in from the right animation */
+}
+
+.expense-list {
+    list-style: none;
+    padding: 0;
+    animation: slideInLeft 1s ease-in-out; /* Slide in from the left animation */
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #001528;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+.delete-button {
+    background-color: #5D186D;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out; /* Fade in animation */
+}
+
+.delete-button:hover {
+    background-color: #001528;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    border: #5D186D;
+    border-style: solid;
+    background-color: #5D186D;
+    color: #fff;
+    border-radius: 8px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+.submit-btn:hover {
+    border: #001528;
+    border-style: solid;
+    background-color: #001528;
+    color: #fff;
+    border-radius: 8px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+#expenseTitle,
+#expenseAmount {
+    color: black;
+    max-width: 580px;
+    background-color: transparent;
+    border-color: #001528;
+    animation: slideInLeft 1s ease-in-out; /* Slide in from the left animation */
+}
+
+#expenseTitle:hover,
+#expenseAmount:hover {
+    max-width: 580px;
+    background-color: transparent;
+    border-color: #5D186D;
+    color: #5D186D;
+}
+
+.heading{
+    margin-right: -16px;
+    user-select: none;
+}
+
+.heading:hover {
+    color: #5D186D;
+}
+
+.head_hover:hover {
+    color: #5D186D;
+}
+
+.expense-title {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static\main.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>
+        <span class="heading">E</span>
+        <span class="heading">x</span>
+        <span class="heading">p</span>
+        <span class="heading">e</span>
+        <span class="heading">n</span>
+        <span class="heading">s</span>
+        <span class="heading">e&nbsp;</span>
+        <span class="heading">T</span>
+        <span class="heading">r</span>
+        <span class="heading">a</span>
+        <span class="heading">c</span>
+        <span class="heading">k</span>
+        <span class="heading">e</span>
+        <span class="heading">r</span>
+    </h1>
+    <div class="container">
+        <form class="expense-form" id="expenseForm">
+            <div class="form-row">
+                <div class="col-md-6 head_hover">
+                    <label for="expenseTitle">Title:</label>
+                    <input type="text" id="expenseTitle" class="form-control" required>
+                </div>
+                <div class="col-md-6 head_hover">
+                    <label for="expenseAmount">Amount:</label>
+                    <input type="number" id="expenseAmount" class="form-control" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Add Entry</button>
+        </form>
+
+        <h2 class="expense-title">Expenses:</h2>
+        <ul class="expense-list" id="expenseList">
+        </ul>
+    </div>
+    <script src="static\script.js"></script>
+</body>
+</html>
